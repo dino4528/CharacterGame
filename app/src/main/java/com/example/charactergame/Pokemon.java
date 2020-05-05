@@ -7,10 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Random;
 
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -20,7 +24,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import org.apache.http.NameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,32 +31,85 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Scanner;
+
+
 public class Pokemon extends AppCompatActivity {
     public String characterName;
     public EditText nameInput;
     public Button submitButton;
+    public TextView msg;
 
     public Button restartButton;
 
-    List<Pokemon> pokeList;
-
-    public Random number = new Random();
-
-    JSONParser jsonParser = new JSONParser();
+    public static Random number = new Random();
+    /**
+     * URL
+     */
     private static final String JSON_URL = "https://pokeapi.co/api/v2/pokmon/";
 
-    List<NameValuePair> param = new ArrayList<NameValuePair>();
-    JSONObject json = jParser.makeHttpRequest(JSON_URL, "GET", param);
+    URL url = new URL(JSON_URL);
+    URLConnection request = url.openConnection();
+    request.connect();
 
-    JSONObject songs = json.getJSONObject("songs");
+    /**
+     * set json array
+     * @param j json url
+     * @throws JSONException
+     */
+    public static JSONArray setJson(String j) throws JSONException{
+        JSONObject obj = new JSONObject(j);
+        JSONArray jar = obj.getJSONArray("pokemon");
+        return jar;
+    }
+
+    /**
+     * get pokemon of index given
+     * @param index index of pokemon from json file
+     * @return name of pokemon of index given
+     * @throws JSONException
+     */
+    public static String indexPokemon(int index) throws JSONException {
+        JSONArray jar = setJson(JSON_URL);
+        return (String) jar.getJSONObject(index).get("name");
+    }
+
+    public static void main(String[] args) throws JSONException {
+        setJson(JSON_URL);
+        JSONArray jar = setJson(JSON_URL);
+        int index = number.nextInt(jar.length());
 
 
+    }
+
+    public static String getType(String url, int index) throws JSONException {
+        JSONArray jar = new JSONArray();
+        jar.put(setJson(url).getJSONObject(index).get("types"));
+        return null;
+    }
+
+    public static String getUrl(int index) throws  JSONException {
+        JSONArray jar = setJson(JSON_URL);
+        return (String) jar.getJSONObject(index).get("url");
+    }
+
+
+    /**------------------------------------------------------------------------------------*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pokemon);
 
-        pokeList = new ArrayList<>();
+        msg = (TextView) findViewById(R.id.changeText);
+        try {
+            msg.setText(indexPokemon(0));
+        } catch (JSONException e) {
+            msg.setText("This is wrong");
+        }
 
         restartButton = (Button) findViewById(R.id.restart);
         restartButton.setOnClickListener(new View.OnClickListener() {
