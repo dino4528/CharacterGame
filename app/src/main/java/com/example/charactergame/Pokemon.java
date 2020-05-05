@@ -27,6 +27,7 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,6 +54,16 @@ public class Pokemon extends AppCompatActivity {
      */
     private static final String JSON_URL = "https://pokeapi.co/api/v2/pokmon/";
 
+    @SerializedName("name")
+    private String name;
+
+    public Pokemon() {
+    }
+
+    // Getter
+    public String getName() {
+        return name;
+    }
 
 
     /**
