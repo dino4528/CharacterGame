@@ -42,11 +42,11 @@ public class Main2Activity extends AppCompatActivity {
         });
     }
     public void openLeague() {
-        Intent intent = new Intent(this, League.class);
+        Intent intent = new Intent(this, StartLol.class);
         startActivity(intent);
     }
     public void openPokemon() {
-        Intent intent = new Intent(this, Pokemon.class);
+        Intent intent = new Intent(this, StartPoke.class);
         startActivity(intent);
     }
     public void openRestart() {

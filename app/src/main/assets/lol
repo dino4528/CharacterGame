@@ -1,0 +1,739 @@
+{
+  "League of Legends": [
+    {
+      "order": 1,
+      "name": "aatrox",
+      "nickname": "the darkin blade"
+    },
+    {
+      "order": 2,
+      "name": "ahri",
+      "nickname": "the nine - tailed fox"
+    },
+    {
+      "order": 3,
+      "name": "akali",
+      "nickname": "the fist of shadow"
+    },
+    {
+      "order": 4,
+      "name": "alistar",
+      "nickname": "the minotaur"
+    },
+    {
+      "order": 5,
+      "name": "amumu",
+      "nickname": "the sad mummy"
+    },
+    {
+      "order": 6,
+      "name": "anivia",
+      "nickname": "the crtophoenix"
+    },
+    {
+      "order": 7,
+      "name": "annie",
+      "nickname": "the dark child"
+    },
+    {
+      "order": 8,
+      "name": "aphelios",
+      "nickname": "the weapon of the faithful"
+    },
+    {
+      "order": 9,
+      "name": "ashe",
+      "nickname": "the frost archer"
+    },
+    {
+      "order": 10,
+      "name": "aurelion sol",
+      "nickname": "the star forger"
+    },
+    {
+      "order": 11,
+      "name": "azir",
+      "nickname": "the emperor of the sands"
+    },
+    {
+      "order": 12,
+      "name": "bard",
+      "nickname": "the wandering caretaker"
+    },
+    {
+      "order": 13,
+      "name": "blitzcrank",
+      "nickname": "the great steam golem"
+    },
+    {
+      "order": 14,
+      "name": "brand",
+      "nickname": "the burnung vengeance"
+    },
+    {
+      "order": 15,
+      "name": "braum",
+      "nickname": "the heart of freljord"
+    },
+    {
+      "order": 16,
+      "name": "caitlyn",
+      "nickname": "the sheriff of piltover"
+    },
+    {
+      "order": 17,
+      "name": "camile",
+      "nickname": "the steel shadow"
+    },
+    {
+      "order": 18,
+      "name": "cassiopeia",
+      "nickname": "the serpent's embrace"
+    },
+    {
+      "order": 19,
+      "name": "cho'gath",
+      "nickname": "the terror of the void"
+    },
+    {
+      "order": 20,
+      "name": "corki",
+      "nickname": "the daring bombardier"
+    },
+    {
+      "order": 21,
+      "name": "darius",
+      "nickname": "the hand of noxus"
+    },
+    {
+      "order": 22,
+      "name": "diana",
+      "nickname": "the scorn of the moon"
+    },
+    {
+      "order": 23,
+      "name": "dr. mundo",
+      "nickname": "the madman of zaun"
+    },
+    {
+      "order": 24,
+      "name": "draven",
+      "nickname": "the glorious executioner"
+    },
+    {
+      "order": 25,
+      "name": "ekko",
+      "nickname": "the boy who shattered time"
+    },
+    {
+      "order": 26,
+      "name": "elise",
+      "nickname": "the spider queen"
+    },
+    {
+      "order": 27,
+      "name": "evelynn",
+      "nickname": "the widowmaker"
+    },
+    {
+      "order": 28,
+      "name": "ezreal",
+      "nickname": "the prodigal explorer"
+    },
+    {
+      "order": 29,
+      "name": "fiddlesticks",
+      "nickname": "the harbinger of doom"
+    },
+    {
+      "order": 30,
+      "name": "fiora",
+      "nickname": "the grand duelist"
+    },
+    {
+      "order": 31,
+      "name": "fizz",
+      "nickname": "the tidal trickster"
+    },
+    {
+      "order": 32,
+      "name": "galio",
+      "nickname": "the sentinel's sorrow"
+    },
+    {
+      "order": 33,
+      "name": "gangplank",
+      "nickname": "the saltwater scourge"
+    },
+    {
+      "order": 34,
+      "name": "garen",
+      "nickname": "the might of demacia"
+    },
+    {
+      "order": 35,
+      "name": "gnar",
+      "nickname": "the missing link"
+    },
+    {
+      "order": 36,
+      "name": "gragas",
+      "nickname": "the rabble rouser"
+    },
+    {
+      "order": 37,
+      "name": "graves",
+      "nickname": "the outlaw"
+    },
+    {
+      "order": 38,
+      "name": "hecarim",
+      "nickname": "the shadow of war"
+    },
+    {
+      "order": 39,
+      "name": "heimerdinger",
+      "nickname": "the revered inventor"
+    },
+    {
+      "order": 40,
+      "name": "irelia",
+      "nickname": "the will of the blades"
+    },
+    {
+      "order": 41,
+      "name": "ivern",
+      "nickname": "the green father"
+    },
+    {
+      "order": 42,
+      "name": "janna",
+      "nickname": "the storm's fury"
+    },
+    {
+      "order": 43,
+      "name": "jarvan IV",
+      "nickname": "the exemplar of demacia"
+    },
+    {
+      "order": 44,
+      "name": "jax",
+      "nickname": "the grandmaster at arms"
+    },
+    {
+      "order": 45,
+      "name": "jayce",
+      "nickname": "the defender of tomorrow"
+    },
+    {
+      "order": 46,
+      "name": "jhin",
+      "nickname": "the virtuoso"
+    },
+    {
+      "order": 47,
+      "name": "jinx",
+      "nickname": "the loose cannon"
+    },
+    {
+      "order": 48,
+      "name": "kai'sa",
+      "nickname": "daughter of the void"
+    },
+    {
+      "order": 49,
+      "name": "kalista",
+      "nickname": "the spear of the vengeance"
+    },
+    {
+      "order": 50,
+      "name": "karma",
+      "nickname": "the enlightened one"
+    },
+    {
+      "order": 51,
+      "name": "karthus",
+      "nickname": "the deathsinger"
+    },
+    {
+      "order": 52,
+      "name": "kassadin",
+      "nickname": "the void walker"
+    },
+    {
+      "order": 53,
+      "name": "katarina",
+      "nickname": "the sinister blade"
+    },
+    {
+      "order": 54,
+      "name": "kayle",
+      "nickname": "the judicator"
+    },
+    {
+      "order": 55,
+      "name": "kayn",
+      "nickname": "the shadow reaper"
+    },
+    {
+      "order": 56,
+      "name": "kennen",
+      "nickname": "the heart of the tempest"
+    },
+    {
+      "order": 57,
+      "name": "kha'zix",
+      "nickname": "the voidreaver"
+    },
+    {
+      "order": 58,
+      "name": "kindred",
+      "nickname": "the eternal hunters"
+    },
+    {
+      "order": 59,
+      "name": "kled",
+      "nickname": "the cantankerous cavalier"
+    },
+    {
+      "order": 60,
+      "name": "kog'maw",
+      "nickname": "the mouth of the abyss"
+    },
+    {
+      "order": 61,
+      "name": "leblanc",
+      "nickname": "the deceiver"
+    },
+    {
+      "order": 62,
+      "name": "lee sin",
+      "nickname": "the blind munk"
+    },
+    {
+      "order": 63,
+      "name": "leona",
+      "nickname": "the radiant dawn"
+    },
+    {
+      "order": 64,
+      "name": "lissandra",
+      "nickname": "the ice witch"
+    },
+    {
+      "order": 65,
+      "name": "lucian",
+      "nickname": "the purifier"
+    },
+    {
+      "order": 66,
+      "name": "lulu",
+      "nickname": "the fae sorceress"
+    },
+    {
+      "order": 67,
+      "name": "lux",
+      "nickname": "the lady of luminosity"
+    },
+    {
+      "order": 68,
+      "name": "malphite",
+      "nickname": "the shard of the monolith"
+    },
+    {
+      "order": 69,
+      "name": "malzahar",
+      "nickname": "the prophet of the void"
+    },
+    {
+      "order": 70,
+      "name": "maokai",
+      "nickname": "the twisted treant"
+    },
+    {
+      "order": 71,
+      "name": "master yi",
+      "nickname": "the wuju bladesman"
+    },
+    {
+      "order": 72,
+      "name": "miss fortune",
+      "nickname": "the bounty hunter"
+    },
+    {
+      "order": 73,
+      "name": "mordekaiser",
+      "nickname": "the master of metal"
+    },
+    {
+      "order": 74,
+      "name": "morgana",
+      "nickname": "the fallen angel"
+    },
+    {
+      "order": 75,
+      "name": "nami",
+      "nickname": "the tidecaller"
+    },
+    {
+      "order": 76,
+      "name": "nasus",
+      "nickname": "the cuator of the sands"
+    },
+    {
+      "order": 77,
+      "name": "nautilus",
+      "nickname": "the titan of the depths"
+    },
+    {
+      "order": 78,
+      "name": "neeko",
+      "nickname": "the curious chameleon"
+    },
+    {
+      "order": 79,
+      "name": "nidalee",
+      "nickname": "the beastial huntress"
+    },
+    {
+      "order": 80,
+      "name": "nocturne",
+      "nickname": "the eternal nightmare"
+    },
+    {
+      "order": 81,
+      "name": "nunu and willump",
+      "nickname": "the boy and his yeti"
+    },
+    {
+      "order": 82,
+      "name": "olaf",
+      "nickname": "the berserker"
+    },
+    {
+      "order": 83,
+      "name": "orianna",
+      "nickname": "the lady of clockwork"
+    },
+    {
+      "order": 84,
+      "name": "ornn",
+      "nickname": "the fire below the mountain"
+    },
+    {
+      "order": 85,
+      "name": "pantheon",
+      "nickname": "the artisan of war"
+    },
+    {
+      "order": 86,
+      "name": "poppy",
+      "nickname": "the iron ambassador"
+    },
+    {
+      "order": 87,
+      "name": "pyke",
+      "nickname": "the bloodharbor ripper"
+    },
+    {
+      "order": 88,
+      "name": "qiyana",
+      "nickname": "empress of the elements"
+    },
+    {
+      "order": 89,
+      "name": "quinn",
+      "nickname": "demacia's wings"
+    },
+    {
+      "order": 90,
+      "name": "rakan",
+      "nickname": "the charmer"
+    },
+    {
+      "order": 91,
+      "name": "rammus",
+      "nickname": "the armordillo"
+    },
+    {
+      "order": 92,
+      "name": "rek'sai",
+      "nickname": "the void burrower"
+    },
+    {
+      "order": 93,
+      "name": "renekton",
+      "nickname": "butcher of the sands"
+    },
+    {
+      "order": 94,
+      "name": "rengar",
+      "nickname": "the pridestalker"
+    },
+    {
+      "order": 95,
+      "name": "riven",
+      "nickname": "the exile"
+    },
+    {
+      "order": 96,
+      "name": "rumble",
+      "nickname": "the mechanized menace"
+    },
+    {
+      "order": 97,
+      "name": "ryze",
+      "nickname": "the rogue mage"
+    },
+    {
+      "order": 98,
+      "name": "sejuani",
+      "nickname": "the winter's wrath"
+    },
+    {
+      "order": 99,
+      "name": "senna",
+      "nickname": "the redeemer"
+    },
+    {
+      "order": 100,
+      "name": "sett",
+      "nickname": "the boss"
+    },
+    {
+      "order": 101,
+      "name": "shaco",
+      "nickname": "the demon jester"
+    },
+    {
+      "order": 102,
+      "name": "shen",
+      "nickname": "the eye of twilight"
+    },
+    {
+      "order": 103,
+      "name": "shyvana",
+      "nickname": "the half-dragon"
+    },
+    {
+      "order": 104,
+      "name": "singed",
+      "nickname": "the mad chemist"
+    },
+    {
+      "order": 105,
+      "name": "sion",
+      "nickname": "the undead juggernaut"
+    },
+    {
+      "order": 106,
+      "name": "sivir",
+      "nickname": "the battle mistress"
+    },
+    {
+      "order": 107,
+      "name": "skarner",
+      "nickname": "the crystal vangaurd"
+    },
+    {
+      "order": 108,
+      "name": "sona",
+      "nickname": "the maven of the strings"
+    },
+    {
+      "order": 109,
+      "name": "soraka",
+      "nickname": "the starchild"
+    },
+    {
+      "order": 110,
+      "name": "swain",
+      "nickname": "the master tactician"
+    },
+    {
+      "order": 111,
+      "name": "sylas",
+      "nickname": "the unshackled"
+    },
+    {
+      "order": 112,
+      "name": "syndra",
+      "nickname": "the dark sovereign"
+    },
+    {
+      "order": 113,
+      "name": "tahm kench",
+      "nickname": "the river king"
+    },
+    {
+      "order": 114,
+      "name": "taliyah",
+      "nickname": "the stoneweaver"
+    },
+    {
+      "order": 115,
+      "name": "talon",
+      "nickname": "the blade's shadow"
+    },
+    {
+      "order": 116,
+      "name": "taric",
+      "nickname": "the gem knight"
+    },
+    {
+      "order": 117,
+      "name": "teemo",
+      "nickname": "the swift scout"
+    },
+    {
+      "order": 118,
+      "name": "thresh",
+      "nickname": "the chaon warden"
+    },
+    {
+      "order": 119,
+      "name": "tristana",
+      "nickname": "the yordle gunner"
+    },
+    {
+      "order": 120,
+      "name": "trundle",
+      "nickname": "the troll king"
+    },
+    {
+      "order": 121,
+      "name": "tryndamere",
+      "nickname": "the barbarian king"
+    },
+    {
+      "order": 122,
+      "name": "twisted fate",
+      "nickname": "the card master"
+    },
+    {
+      "order": 123,
+      "name": "twitch",
+      "nickname": "the plague rat"
+    },
+    {
+      "order": 124,
+      "name": "udyr",
+      "nickname": "the spirit walker"
+    },
+    {
+      "order": 125,
+      "name": "urgot",
+      "nickname": "the headsman's pride"
+    },
+    {
+      "order": 126,
+      "name": "varus",
+      "nickname": "the arrow of retribution"
+    },
+    {
+      "order": 127,
+      "name": "vayne",
+      "nickname": "the night hunter"
+    },
+    {
+      "order": 128,
+      "name": "veigar",
+      "nickname": "the tiny master of evil"
+    },
+    {
+      "order": 129,
+      "name": "vel'koz",
+      "nickname": "the eye of the void"
+    },
+    {
+      "order": 130,
+      "name": "vi",
+      "nickname": "the piltover enforcer"
+    },
+    {
+      "order": 131,
+      "name": "victor",
+      "nickname": "the machine herald"
+    },
+    {
+      "order": 132,
+      "name": "vladmir",
+      "nickname": "the crimson"
+    },
+    {
+      "order": 133,
+      "name": "volibear",
+      "nickname": "the thunder's roar"
+    },
+    {
+      "order": 134,
+      "name": "warwick",
+      "nickname": "the bloodhunter"
+    },
+    {
+      "order": 135,
+      "name": "wukong",
+      "nickname": "the monkey king"
+    },
+    {
+      "order": 136,
+      "name": "xayah",
+      "nickname": "the rebel"
+    },
+    {
+      "order": 137,
+      "name": "xerath",
+      "nickname": "the magus ascendant"
+    },
+    {
+      "order": 138,
+      "name": "xin zhao",
+      "nickname": "the seneschal of demacia"
+    },
+    {
+      "order": 139,
+      "name": "yasuo",
+      "nickname": "the unforgiven"
+    },
+    {
+      "order": 140,
+      "name": "yorick",
+      "nickname": "the gravedigger"
+    },
+    {
+      "order": 141,
+      "name": "yuumi",
+      "nickname": "the magical cat"
+    },
+    {
+      "order": 142,
+      "name": "zac",
+      "nickname": "the secret weapon"
+    },
+    {
+      "order": 143,
+      "name": "zed",
+      "nickname": "the master of shadows"
+    },
+    {
+      "order": 144,
+      "name": "ziggs",
+      "nickname": "the hexplosives expert"
+    },
+    {
+      "order": 145,
+      "name": "zilean",
+      "nickname": "the chronokeeper"
+    },
+    {
+      "order": 146,
+      "name": "zoe",
+      "nickname": "the aspect of twilight"
+    },
+    {
+      "order": 147,
+      "name": "zyra",
+      "nickname": "rise of the thorns"
+    }
+  ]
+}

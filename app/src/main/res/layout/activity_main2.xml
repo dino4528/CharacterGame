@@ -21,8 +21,8 @@
 
     <Button
         android:id="@+id/goToPokemon"
-        android:layout_width="180dp"
-        android:layout_height="80dp"
+        android:layout_width="231dp"
+        android:layout_height="88dp"
         android:layout_marginBottom="247dp"
         android:text="Pokemon"
         app:layout_constraintBottom_toBottomOf="parent"
