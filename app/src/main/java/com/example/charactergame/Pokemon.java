@@ -44,6 +44,7 @@ public class Pokemon extends AppCompatActivity {
     public Button submitButton;
     public TextView msg;
 
+    public static int count = 0;
     public Button restartButton;
 
     public static Random number = new Random();
@@ -52,9 +53,7 @@ public class Pokemon extends AppCompatActivity {
      */
     private static final String JSON_URL = "https://pokeapi.co/api/v2/pokmon/";
 
-    URL url = new URL(JSON_URL);
-    URLConnection request = url.openConnection();
-    request.connect();
+
 
     /**
      * set json array
@@ -124,7 +123,9 @@ public class Pokemon extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                count++;
                 characterName = nameInput.getText().toString();
+
             }
         });
     }
