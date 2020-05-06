@@ -31,6 +31,7 @@ import org.json.JSONObject;
 import com.example.charactergame.MainActivity;
 import com.example.charactergame.R;
 import com.google.gson.annotations.SerializedName;
+import com.example.charactergame.PokeAssist.Poke;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,59 +58,6 @@ public class Pokemon extends AppCompatActivity {
      */
     private static final String JSON_URL = "https://pokeapi.co/api/v2/pokmon/";
 
-    @SerializedName("name")
-    private String name;
-
-    public Pokemon() {
-    }
-
-    // Getter
-    public String getName() {
-        return name;
-    }
-
-
-    /**
-     * set json array
-     * @param j json url
-     * @throws JSONException
-     */
-    public static JSONArray setJson(String j) throws JSONException{
-        JSONObject obj = new JSONObject(j);
-        JSONArray jar = obj.getJSONArray("pokemon");
-        return jar;
-    }
-
-    /**
-     * get pokemon of index given
-     * @param index index of pokemon from json file
-     * @return name of pokemon of index given
-     * @throws JSONException
-     */
-    public static String indexPokemon(int index) throws JSONException {
-        JSONArray jar = setJson(JSON_URL);
-        return (String) jar.getJSONObject(index).get("name");
-    }
-
-    public static void main(String[] args) throws JSONException {
-        setJson(JSON_URL);
-        JSONArray jar = setJson(JSON_URL);
-        int index = number.nextInt(jar.length());
-
-
-    }
-
-    public static String getType(String url, int index) throws JSONException {
-        JSONArray jar = new JSONArray();
-        jar.put(setJson(url).getJSONObject(index).get("types"));
-        return null;
-    }
-
-    public static String getUrl(int index) throws  JSONException {
-        JSONArray jar = setJson(JSON_URL);
-        return (String) jar.getJSONObject(index).get("url");
-    }
-
 
     /**------------------------------------------------------------------------------------*/
     @Override
@@ -118,12 +66,7 @@ public class Pokemon extends AppCompatActivity {
         setContentView(R.layout.activity_pokemon);
 
         msg = (TextView) findViewById(R.id.changeText);
-        try {
-            msg.setText(indexPokemon(0));
-        } catch (JSONException e) {
-            msg.setText("This is wrong");
-        }
-
+        msg.setText("This is Right");
         restartButton = (Button) findViewById(R.id.restart);
         restartButton.setOnClickListener(new View.OnClickListener() {
             @Override

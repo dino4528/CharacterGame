@@ -8,10 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import java.util.Random;
 
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-
 import com.example.charactergame.utilities;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         for(int i = 0; i < 10; i++) {
             array[i] = number.nextInt(150);
             utilities api = new utilities(array[i]);
-
         }
 
         //json file to what we want from url

@@ -1,35 +1,42 @@
 package com.example.charactergame;
 
 import android.content.Context;
-import android.net.NetworkRequest;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
 import java.io.IOException;
 
-import com.example.charactergame.utilities;
-import com.example.charactergame.PokeAssist.PokemonHolder;
+import com.example.charactergame.PokeAssist.Poke;
 
 import com.google.gson.Gson;
 
-public class PokemonAsyncTask extends AsyncTask<Integer, Integer, List<String>> {
+public class PokemonAsyncTask extends AsyncTask<String, Integer, Poke[]> {
 
     private Context context;
 
     public PokemonAsyncTask(Context context) { this.context = context; }
 
     @Override
-    protected List<String> doInBackground(Integer... params) {
+    protected Poke[] doInBackground(String... params) {
 
-        List<PokemonHolder> pokemon = new ArrayList<>();
+        Poke pokeArray[] = new Poke[10];
+
 
         try {
+            int count = 0;
+            for (String i : params) {
 
+                InputStreamReader inputStreamReader = utilities.getFromUrl(i);
 
+                Gson gson = new Gson();
+                Poke getPokemon = gson.fromJson(inputStreamReader, Poke.class);
+                pokeArray[count] = getPokemon;
+                count++;
+            }
+
+            return pokeArray;
         } catch (IOException e) {
             Toast.makeText(context, "Network Error.", Toast.LENGTH_LONG).show();
         }

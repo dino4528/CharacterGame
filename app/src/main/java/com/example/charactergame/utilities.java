@@ -20,6 +20,9 @@ public class utilities {
     private String pokeUrl = "https://pokeapi.co/api/v2/pokmon/";
     private String baseUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
+    public utilities() {
+    }
+
     public utilities(int pokeNum) {
         pokeUrl += pokeNum;
     }
@@ -38,7 +41,7 @@ public class utilities {
      * @return data from the inputUrl
      * @throws IOException exception that can caused by bad networking
      */
-    public String getFromUrl(String inputUrl) throws IOException {
+    public static String getFromUrl(String inputUrl) throws IOException {
         StringBuffer sBuffer = new StringBuffer();
         try {
             URL pokemonUrl = new URL(inputUrl);
