@@ -27,6 +27,9 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.example.charactergame.MainActivity;
+import com.example.charactergame.R;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;

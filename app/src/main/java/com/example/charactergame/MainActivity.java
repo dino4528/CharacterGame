@@ -18,11 +18,6 @@ public class MainActivity extends AppCompatActivity {
     public Button button;
 
     Random number = new Random();
-    int[] array = new int[10];
-
-    for (int i = 0; i < 10; i++) {
-        array[i] = number.nextInt(150);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +25,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //make for loop 10 times
-        utilities api = new utilities(array[i]);
+        int[] array = new int[10];
+        String[] pokeList = new String[10];
+
+        for(int i = 0; i < 10; i++) {
+            array[i] = number.nextInt(150);
+            utilities api = new utilities(array[i]);
+
+        }
 
         //json file to what we want from url
+        //execute
 
 
         button = (Button) findViewById(R.id.goToMain);

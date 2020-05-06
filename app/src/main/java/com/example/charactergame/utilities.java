@@ -1,16 +1,19 @@
 package com.example.charactergame;
-/**
- import android.content.Context;
- import android.content.Intent;
- import android.net.Uri;
 
- import java.io.IOException;
- import java.io.InputStream;
- import java.io.InputStreamReader;
- import java.net.URL;
- import java.net.URLConnection;
- import java.nio.charset.Charset;
- */
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.nio.charset.Charset;
+
+import com.example.charactergame.PokeAssist.PokemonAPI;
+import com.example.charactergame.
+
 public class utilities {
     /**
      * // Number of urls that is going to be passed into AsyncTask
@@ -34,32 +37,32 @@ public class utilities {
     public utilities(int pokeNum) {
         pokeUrl += pokeNum;
     }
+
+
+
+
+    /**
+     * Make a connection with the url and receive the response in input stream.
+     * @param inputUrl destination url
+     * @return data from the inputUrl
+     * @throws IOException exception that can caused by bad networking
+     */
+    public static InputStreamReader getInputFromUrl(String inputUrl) throws IOException {
+        try {
+            URL pokeUrl = new URL(inputUrl);
+
+            URLConnection connection = pokeUrl.openConnection();
+            connection.setRequestProperty("user-key", pokeUrl.API_KEY);
+            connection.connect();
+
+            InputStream inStream = connection.getInputStream();
+            return new InputStreamReader(inStream, Charset.forName("UTF-8"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
-
-
-//
-///**
-//    /**
-//     * Make a connection with the url and receive the response in input stream.
-//     * @param inputUrl destination url
-//     * @return data from the inputUrl
-//     * @throws IOException exception that can caused by bad networking
-//     */
-//    public static InputStreamReader getInputFromUrl(String inputUrl) throws IOException{
-//        try {
-//            URL zomatoUrl = new URL(inputUrl);
-//
-//            URLConnection connection = zomatoUrl.openConnection();
-//            connection.setRequestProperty("user-key", ZomatoAPI.API_KEY);
-//            connection.connect();
-//
-//            InputStream inStream = connection.getInputStream();
-//            return new InputStreamReader(inStream, Charset.forName("UTF-8"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
 //
 //    /**
 //     * Use the base URL to make duplicate URLs with 'start' value
